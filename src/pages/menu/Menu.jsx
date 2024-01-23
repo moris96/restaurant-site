@@ -43,36 +43,46 @@ const MenuSection = ({ title, items }) => (
 const Menu = () => {
   const [selectedMenu, setSelectedMenu] = useState('breakfast');
 
-  // Dummy data, replace with your actual menu data
+  // Menu data
   const menuData = {
     breakfast: [
-      { name: 'Breakfast 1', description: 'Breakfast 1', price: 8.99 },
+      { name: 'Breakfast Tea', description: 'Breakfast Tea', price: 4.99 },
+      { name: 'Muffins', description: 'Muffins', price: 8.99 },
       // Add more breakfast items as needed
     ],
-    lunch: [
-      { name: 'Lunch 1', description: 'Lunch 1', price: 12.99 },
-      // Add more lunch items as needed
-    ],
     secondBreakfast: [
-      { name: 'Second Breakfast 1', description: 'Second Breakfast 1', price: 9.99 },
-      // Add more second breakfast items as needed
+        { name: 'Baked Apple Gondorian Toast topped with Streusel Topping', description: 'Second Breakfast 1', price: 12.99 },
+        { name: 'Breakfast Susage', description: 'Second Breakfast 2', price: 8.99 },
+        // Add more second breakfast items as needed
     ],
     elevenses: [
-      { name: 'Elevenses 1', description: 'Elevenses 1', price: 7.99 },
-      // Add more elevenses items as needed
+        { name: 'Lembas Bread', description: 'Elevenses 1', price: 7.99 },
+        { name: 'Plain Scones', description: 'Elevenses 1', price: 6.99 },
+        // Add more elevenses items as needed
+    ],
+    lunch: [
+        { name: 'Slow Cooked Potato Soup', description: 'Lunch 1', price: 12.99 },
+        { name: 'Slow Cooked Rabbit Soup with Lembas Bread Crumbs', description: 'Lunch 1', price: 18.99 },
+        // Add more lunch items as needed
     ],
     afternoonTea: [
-      { name: 'Afternoon Tea 1', description: 'Afternoon Tea 1', price: 14.99 },
+      { name: 'Afternoon Tea', description: 'Afternoon Tea 1', price: 4.99 },
+      { name: 'Plain Scones', description: 'Afternoon Tea 1', price: 6.99 },
+      { name: 'Biscotti', description: 'Afternoon Tea 1', price: 8.99 },
       // Add more afternoon tea items as needed
     ],
     dinner: [
-      { name: 'Dinner 1', description: 'Dinner 1', price: 19.99 },
-      { name: 'Dinner 2', description: 'Dinner 2', price: 29.99 },
+      { name: "Balin's Spiced Beef Roast", description: 'Dinner 1', price: 19.99 },
+      { name: "Pipin's Salted Pork", description: 'Dinner 1', price: 24.99 },
       // Add more dinner items as needed
     ],
     supper: [
-      { name: 'Supper 1', description: 'Supper 1', price: 10.99 },
+      { name: 'Pork Sasuage', description: 'Supper 1', price: 14.99 },
       // Add more supper items as needed
+    ],
+    desserts: [
+        { name: 'Apple Pie', description: 'Dessert 1', price: 14.99 },
+        // Add more supper items as needed
     ],
   };
 
@@ -95,6 +105,7 @@ const Menu = () => {
           <Dropdown.Item eventKey="afternoonTea">Afternoon Tea</Dropdown.Item>
           <Dropdown.Item eventKey="dinner">Dinner</Dropdown.Item>
           <Dropdown.Item eventKey="supper">Supper</Dropdown.Item>
+          <Dropdown.Item eventKey="desserts">Desserts</Dropdown.Item>
         </Dropdown.Menu>
       </Dropdown>
       <MenuSection title={
@@ -104,7 +115,8 @@ const Menu = () => {
         selectedMenu === 'elevenses' ? 'Elevenses Items' :
         selectedMenu === 'afternoonTea' ? 'Afternoon Tea Items' :
         selectedMenu === 'dinner' ? 'Dinner Items' :
-        'Supper Items'
+        selectedMenu === 'supper' ? 'Supper Items' :
+        'Desserts Items'
       } items={menuData[selectedMenu]} />
     </Container>
   );
