@@ -12,7 +12,7 @@ const Navbar = () => {
           <Nav.Link to={"/about"} as={NavLink}>About</Nav.Link>
           <Nav.Link to={"/menu"} as={NavLink}>Menu</Nav.Link>
           <Nav.Link to={"/contact"} as={NavLink}>Contact</Nav.Link>
-          <Nav.Link to={"/reservations"} as={NavLink}>Make A Reservation</Nav.Link>
+          <Nav.Link to={"/reservations"} as={NavLink}>Reservations</Nav.Link>
         </Nav>
       </Container>
     </NavbarBs>
