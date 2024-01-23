@@ -1,0 +1,22 @@
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: backgroundAnimation 20s infinite;
+    background-image: url('https://pbs.twimg.com/media/EO1yWzbXUAA-VmS.jpg');
+    background-size: cover;
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}

@@ -1,19 +1,6 @@
-// import React from 'react';
-
-// const Menu = () => {
-//   return (
-//     <div>
-//       <h1>Menu Page</h1>
-//     </div>
-//   );
-// };
-
-// export default Menu
-
-
-
 import React, { useState } from 'react';
 import { Container, Row, Col, Card, ListGroup, Dropdown, ButtonGroup } from 'react-bootstrap';
+import './Menu.css';
 
 const MenuItem = ({ name, description, price }) => (
   <ListGroup.Item>
@@ -123,8 +110,3 @@ const Menu = () => {
 };
 
 export default Menu;
-
-
-
-
-
