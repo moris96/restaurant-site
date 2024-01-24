@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/hobbiton-brush-hand');
+
 .navbar-custom {
     height: 100px;
 }
@@ -8,4 +10,14 @@
   
 .nav-link:hover {
     color: #fff; 
+}
+
+.navbar .navbar-brand img {
+    margin-right: 10px; /* Adjust the margin as needed */
+}
+
+.title {
+    color: #fff;
+    text-align: left;
+    font-family: 'Hobbiton Brushhand', sans-serif;
 }

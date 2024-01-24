@@ -8,6 +8,7 @@ import Contact from "./pages/contact/Contact";
 import Reservations from "./pages/reservations/Reservations";
 
 import Navbar from "./components/navbar/Navbar";
+import Footer from "./components/footer/Footer";
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
           <Route path="*" element={ <h1>404 Not Found</h1> } />
         </Routes>
       </Container>
+      <Footer/>
     </>
   );
 };
