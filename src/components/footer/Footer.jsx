@@ -31,7 +31,7 @@ const Footer = () => {
             <Col lg={4} md={6} className="mb-4 mb-md-0">
               <ul className="fa-ul" style={{ marginLeft: '1.65em' }}>
                 <li className="mb-3">
-                  <span className="fa-li"><i className="fas fa-home" /></span><span className="ms-2">505 Buckland Road, Hobbitton, The Shire, Middle Earth</span>
+                  <span className="fa-li"><i className="fas fa-home" /></span><span className="ms-2">501 Buckland Road, Hobbitton, The Shire, Middle Earth</span>
                 </li>
                 <li className="mb-3">
                   <span className="fa-li"><i className="fas fa-envelope" /></span><span className="ms-2">info@hobbitonbistro.com</span>
