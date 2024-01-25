@@ -47,6 +47,7 @@ const Reservations = () => {
           </Button>
         </Form>
       </div>
+      <h5 className='text-center'>Please note that if you want to reserve an event with a large party of 10 or more people, call or email us to setup the event.</h5>
     </Container>
   );
 };

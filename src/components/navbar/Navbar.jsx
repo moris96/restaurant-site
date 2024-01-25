@@ -17,9 +17,7 @@ const Navbar = () => {
         {/* Navigation */}
         <Nav className='ms-auto'>
           <Nav.Link to={"/"} as={NavLink}>Home</Nav.Link>
-          <Nav.Link to={"/about"} as={NavLink}>About</Nav.Link>
           <Nav.Link to={"/menu"} as={NavLink}>Menu</Nav.Link>
-          <Nav.Link to={"/contact"} as={NavLink}>Contact</Nav.Link>
           <Nav.Link to={"/reservations"} as={NavLink}>Reservations</Nav.Link>
         </Nav>
       </Container>

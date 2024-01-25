@@ -18,9 +18,7 @@ function App() {
       <Container className="mb-4">
         <Routes>
           <Route path="/" element={ <Home/> } />
-          <Route path="/about" element={ <About/> } />
           <Route path="/menu" element={ <Menu/> } />
-          <Route path="/contact" element={ <Contact/> } />
           <Route path="/reservations" element={ <Reservations/> } />
           <Route path="*" element={ <h1>404 Not Found</h1> } />
         </Routes>

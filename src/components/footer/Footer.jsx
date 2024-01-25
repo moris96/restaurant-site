@@ -12,12 +12,12 @@ const Footer = () => {
         <Container className="p-4">
           <Row className="justify-content-between">
             <Col lg={4} md={12} className="mb-4 mb-md-0">
-              <h5 className="text-uppercase mb-4">About company</h5>
+              <h5 className="text-uppercase mb-4">About Us</h5>
               <p>
                 Welcome to Hobbiton Bistro, a charming restaurant located in the heart of the Shire, run by a delightful community of Hobbits.
               </p>
               <p>
-                Our menu features hearty pies, tender roasts, and locally sourced delights and produce, all crafted with love and a touch of Hobbit magic. Step into our world and enjoy a delicious meal while experiencing the magic, warmth, and homely comfort of the Shire.
+                Our menu features hearty pies, tender roasts, and locally sourced delights and produce, all crafted with love and a touch of Hobbit magic. Inspired by our homely homes often referred as "Hobbit holes", we aim to provide as much comfort from home as possible for both Hobbits and everybody else. Step into our world and enjoy a delicious meal while experiencing the magic, warmth, and homely comfort of the Shire.
               </p>
               <div className="mt-4">
                 <h5>Follow us on our socials!</h5>
@@ -80,7 +80,7 @@ const Footer = () => {
           </Row>
         </Container>
         <div className="text-center p-3" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-          © 2024 Copyright:
+          © 2024 Copyright: <br/>
           <a className="text-white" href="#">hobbitonbistro.com</a>
         </div>
       </footer>
